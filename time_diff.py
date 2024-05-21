@@ -18,7 +18,7 @@ def get_file_path(file_type, extension):
 parser = argparse.ArgumentParser(description="Process quiz entry and gradescope submission times.")
 parser.add_argument('-c', '--csv', type=str, help="Path to the CSV file.", dest='csv')
 parser.add_argument('-y', '--yml', type=str, help="Path to the YAML file.", dest='yml')
-parser.add_argument('-t', '--time', type=str, help="Time limit in format HH:MM", dest='time_limit', required=True)
+parser.add_argument('-t', '--time', type=str, help="Time limit in format HH:MM:SS", dest='time_limit', required=True)
 
 args = parser.parse_args()
 
@@ -31,8 +31,8 @@ df1['DateTime'] = pd.to_datetime(df1['Date'] + ' ' + df1['Time'])
 
 quiz_entries = df1[df1['Event'] == 'Quiz Entry']
 
-hours, minutes = map(int, args.time_limit.split(':'))
-threshold = timedelta(hours=hours, minutes=minutes)
+hours, minutes, seconds = map(int, args.time_limit.split(':'))
+threshold = timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
 with open(file_path2, 'r') as file:
     submissions = yaml.safe_load(file)

@@ -22,11 +22,11 @@ Install the requirements using pip:
 
 - `-c, --csv`: Path to the CSV file containing quiz entries.
 - `-y, --yml`: Path to the YAML file containing submission times.
-- `-t, --time`: Time limit in the format `HH:MM` (e.g., `01:30` for 1 hour 30 minutes).
+- `-t, --time`: Time limit in the format `HH:MM:SS` (e.g., `01:30:00` for 1 hour 30 minutes 0 seconds).
 
 ### Example Command
 
-`python script.py -c quiz_entries.csv -y submissions.yml -t 01:15`
+`python script.py -c quiz_entries.csv -y submissions.yml -t 01:15:00`
 
 If you do not provide the file paths as arguments, the script will prompt you to enter them.
 
