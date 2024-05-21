@@ -3,3 +3,4 @@ datetime
 PyYAML
 argparse
 tzlocal
+fsspec

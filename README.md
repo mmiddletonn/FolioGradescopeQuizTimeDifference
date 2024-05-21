@@ -11,6 +11,7 @@ Ensure you have the following packages installed. You can install them using the
 `PyYAML`
 `argparse`
 `tzlocal`
+`fsspec`
 
 Install the requirements using pip:
 `pip install -r requirements.txt`
