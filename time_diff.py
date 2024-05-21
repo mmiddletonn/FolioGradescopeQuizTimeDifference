@@ -18,7 +18,7 @@ def get_file_path(file_type, extension):
 parser = argparse.ArgumentParser(description="Process quiz entry and gradescope submission times.")
 parser.add_argument('-c', '--csv', type=str, help="Path to the CSV file.", dest='csv')
 parser.add_argument('-y', '--yml', type=str, help="Path to the YAML file.", dest='yml')
-parser.add_argument('-t', '--time', type=str, help="Time limit in format HH:MM:SS", dest='time_limit', required=True)
+parser.add_argument('-t', '--time', type=str, help="Time limit in format HH:MM:SS", dest='time_limit', default='00:00:00')
 
 args = parser.parse_args()
 
@@ -77,3 +77,4 @@ results_df.to_csv('output.csv', index=False)
 
 for result in results:
     print(f"{result[0]}: {result[1]}")
+    
