@@ -26,7 +26,7 @@ Install the requirements using pip:
 
 ### Example Command
 
-`python script.py -c quiz_entries.csv -y submissions.yml -t 01:15:00`
+`python time_diff.py -c quiz_entries.csv -y submissions.yml -t 01:15:00`
 
 If you do not provide the file paths as arguments, the script will prompt you to enter them.
 
