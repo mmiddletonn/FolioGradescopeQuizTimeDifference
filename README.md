@@ -48,11 +48,11 @@ If you do not provide the file paths as arguments, the script will prompt you to
 - **Source:** ![Alt text](gradescope_yml.png)
 - **Format:**
     ```
-    12345:
+    submission_234542234:
     :submitters:
         - :name: "John Doe"
     :created_at: "2024-05-10 09:00:00.000000Z"
-    67890:
+    submission_132543455:
     :submitters:
         - :name: "Jane Smith"
     :created_at: "2024-05-10 09:15:00.000000Z"
