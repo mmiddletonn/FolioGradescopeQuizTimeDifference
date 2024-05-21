@@ -43,7 +43,7 @@ If you do not provide the file paths as arguments, the script will prompt you to
     2024-05-10,08:05:00,Jane Smith,Quiz Entry
 
     ...
-### YAML File (Submission Times)
+#### YAML File (Submission Times)
 
 - **Source:** ![Alt text](gradescope_yml.png)
 - **Format:**
