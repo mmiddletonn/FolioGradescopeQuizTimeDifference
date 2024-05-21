@@ -20,6 +20,7 @@ parser.add_argument('-c', '--csv', type=str, help="Path to the CSV file.", dest=
 parser.add_argument('-y', '--yml', type=str, help="Path to the YAML file.", dest='yml')
 parser.add_argument('-t', '--time', type=str, help="Time limit in format HH:MM:SS", dest='time_limit', default='00:00:00')
 
+
 args = parser.parse_args()
 
 file_path1 = args.csv if args.csv else get_file_path('CSV', 'csv')
